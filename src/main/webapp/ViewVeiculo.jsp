@@ -20,7 +20,7 @@
 	<h1>Listagem de Veiculos</h1>
 	
 
-	<table class="ui collapsing table">
+	<table class="ui selectable collapsing table">
 		<tr>
 			<th>ID</th>
 			<th>PLACA</th>
@@ -40,8 +40,8 @@
 				<td>${veiculo.proprietario.id}</td>
 				<td>${veiculo.proprietario.cpf_cnpj}</td>
 				<td>${veiculo.proprietario.nome}</td>
-				<td><a href="VeiculoUpdate?id=${veiculo.id}">Editar</a></td>
-				<td><a href="VeiculoDelete?id=${veiculo.id}">Excluir</a></td>
+				<td><a class="ui primary button" href="VeiculoUpdate?id=${veiculo.id}"><i class="edit icon"></i>Editar</a></td>
+				<td><a class="ui negative button" href="VeiculoDelete?id=${veiculo.id}"><i class="trash icon"></i>Excluir</a></td>
 			</tr>
 		</c:forEach>
 	</table>

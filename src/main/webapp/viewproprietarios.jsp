@@ -21,7 +21,7 @@
 	<h1>Listagem de Proprietários</h1>
 	
 
-	<table class="ui collapsing table">
+	<table class="ui selectable collapsing table">
 		<tr>
 			<th>ID</th>
 			<th>CPF-CNPJ</th>
@@ -37,8 +37,8 @@
 				<td>${proprietario.cpf_cnpj}</td>
 				<td>${proprietario.nome}</td>
 				<td>${proprietario.endereco}</td>
-				<td><a href="ProprietarioUpdate?id=${proprietario.id}">Editar</a></td>
-				<td><a href="ProprietarioDelete?id=${proprietario.id}">Excluir</a></td>
+				<td><a class="ui primary button" href="ProprietarioUpdate?id=${proprietario.id}"><i class="edit icon"></i>Editar</a></td>
+				<td><a class="ui negative button" href="ProprietarioDelete?id=${proprietario.id}"><i class="trash icon"></i>Excluir</a></td>
 			</tr>
 		</c:forEach>
 	</table>
